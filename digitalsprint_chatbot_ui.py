@@ -39,8 +39,6 @@ st.set_page_config(
 )
 
 today = datetime.now().date()
-print(today,"Hellllllllllllllllllllllllllllllllllllllllllllllllllllllllllll")
-print(st.session_state.last_generated_date)
 if st.session_state.last_generated_date != today:
     st.session_state.generation_count = 0
     st.session_state.news = None
@@ -117,3 +115,4 @@ if st.session_state.news:
         """,
         height=80
     )
+
